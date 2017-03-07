@@ -1,0 +1,22 @@
+body {
+  display: block;
+  width: 80%;
+  overflow: hidden;
+  background-color: tomato;
+  margin: 0 auto; }
+
+header {
+  background-color: #67c4b3;
+  width: 50%;
+  overflow: hidden;
+  margin: 30% auto;
+  border: 2px dashed #fff; }
+  header h1 {
+    color: white;
+    text-align: center; }
+
+.testing {
+  width: 71.42857%; }
+
+#logo {
+  background-color: #2cdd16; }
