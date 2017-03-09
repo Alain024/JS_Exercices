@@ -1,16 +1,31 @@
 body {
   display: block;
-  width: 80%;
+  width: 100%;
   overflow: hidden;
-  background-color: tomato;
+  background-color: #fff;
   margin: 0 auto; }
 
+.cf {
+  display: block;
+  content: "";
+  clear: both; }
+
 header {
-  background-color: #67c4b3;
-  width: 50%;
+  background-color: #03A9F4;
+  width: 100%;
   overflow: hidden;
-  margin: 30% auto;
-  border: 2px dashed #fff; }
+  margin: 0 auto; }
+  header nav {
+    height: auto; }
+  header ul li {
+    float: left;
+    list-style: none;
+    margin-right: 15px;
+    padding: 10px; }
+  header a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold; }
   header h1 {
     color: white;
     text-align: center; }
@@ -20,3 +35,39 @@ header {
 
 #logo {
   background-color: #2cdd16; }
+
+.boton {
+  background-color: #8BC34A;
+  border: 2px solid #000;
+  width: 60px;
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  margin-top: 25px;
+  color: #000; }
+
+form {
+  width: 50%;
+  float: left;
+  overflow: hidden;
+  margin-top: 25px; }
+
+.table-container {
+  width: 50%;
+  overflow: hidden; }
+
+.labels {
+  width: 31%;
+  float: left; }
+  .labels label {
+    display: block;
+    margin-top: 2px;
+    height: 21px;
+    margin-bottom: 7px; }
+
+.inputs {
+  display: block;
+  float: left;
+  width: 30%; }
+  .inputs input {
+    margin-bottom: 8px; }
