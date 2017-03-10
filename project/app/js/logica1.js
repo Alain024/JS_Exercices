@@ -6,6 +6,8 @@ function Satelite(pnombre, ptamanno) {
 
 var btnRegistrar = document.querySelector('#btnRegistrar'),
     btnRedireccionar = document.querySelector('#btnRedireccionar');
+
+    //EventListener para el btnRegistrar
     btnRegistrar.addEventListener('click', function(){
 
     var sNombreSatelite = document.querySelector('#txtNombre').value,
@@ -15,9 +17,6 @@ var btnRegistrar = document.querySelector('#btnRegistrar'),
         /*setItem crea una variable dentro del LocalStorage y stringify lo
         convierte a JSON*/
         localStorage.setItem("satelite", JSON.stringify(objSatelite));
-
-
-
 });
 
 btnRedireccionar.addEventListener('click', function(){
