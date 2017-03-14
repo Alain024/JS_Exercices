@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Ejercicio Registrar Libros</title>
+</head>
+<body class="cf">
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#">Autores</a></li>
+        <li><a href="#">Libros</a></li>
+        <li><a href="#">Editoriales</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+      <form>
+          <div class="labels">
+            <label for="txtIsbn">Isbn</label>
+            <label for="txtTitulo">Titulo</label>
+            <label for="txtAutor">Autor</label>
+            <label for="txtEditorial">Editorial</label>
+            <label for="txtAnno">Año de publicacion</label>
+          </div>
+
+          <div class="inputs">
+            <input type="number" id="txtIsbn">
+            <input type="text" id="txtTitulo">
+            <input type="text" id="txtAutor">
+            <input type="text" id="txtEditorial">
+            <input type="text" id="txtAnno">
+          </div>
+          <div class="cf"></div>
+          <a href="#" class="boton" id="btnRegistrar">Registrar</a>
+      </form>
+  </main>
+  <div class="table-container">
+    <h1>Libros</h1>
+    <table id="tblLibros">
+      <thead>
+        <tr>
+          <th>Isbn</th>
+          <th>Titulo</th>
+          <th>Autor</th>
+          <th>Editorial</th>
+          <th>Año publicacion</th>
+        </tr>
+      </thead>
+      <tbody>
+
+      </tbody>
+    </table>
+  </div>
+  <script src="js/registrarLibros.js"></script>
+  <script src="js/mostrarLibros.js"></script>
+</body>
+</html>

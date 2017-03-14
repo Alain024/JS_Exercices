@@ -1,6 +1,6 @@
 body {
   display: block;
-  width: 100%;
+  width: 90%;
   overflow: hidden;
   background-color: #fff;
   margin: 0 auto; }
@@ -72,3 +72,10 @@ form {
   width: 30%; }
   .inputs input {
     margin-bottom: 8px; }
+
+th {
+  padding-right: 15px; }
+
+table, td, th {
+  border: 1px solid #000;
+  text-align: center; }

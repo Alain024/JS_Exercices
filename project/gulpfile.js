@@ -2,6 +2,9 @@
 var gulp        = require('gulp');
 var sass        = require('gulp-sass');
 var browserSync = require('browser-sync').create();
+var useref      = require('gulp-useref');
+var uglify      = require('gulp-uglify');
+var gulpIf      = require('gulp-if');
 
 //basic syntax for a gulp task:
 
@@ -35,4 +38,13 @@ gulp.task('browserSync', function(){
       baseDir: 'app'
     },
   })
+});
+
+//Chain files
+gulp.task('useref', function(){
+  return gulp.src('app/*.html')
+    .pipe(useref())
+    // Minifies only if it's a js file
+    .pipe(gulpIf('*.js', uglify()))
+    .pipe(gulp.dest('dist'))
 });

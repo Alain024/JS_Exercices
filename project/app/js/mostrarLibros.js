@@ -4,7 +4,7 @@ function llenarTabla(){
   var tbody = document.querySelector('#tblLibros tbody');
 
   tbody.innerHTML = '';
-
+ //parse convierte un texto a Objeto
   var aIsbn = JSON.parse(localStorage.getItem('isbn_libros')),
       aTitulos = JSON.parse(localStorage.getItem('titulos_libros')),
       aAutores = JSON.parse(localStorage.getItem('autores_libros')),

@@ -2,7 +2,7 @@ $green: rgb(44, 221, 22);
 
 body {
   display: block;
-  width: 100%;
+  width: 90%;
   overflow: hidden;
   background-color: #fff;
   margin: 0 auto;
@@ -74,7 +74,7 @@ form {
 .table-container {
   width: 50%;
   overflow: hidden;
-  
+
 }
 
 .labels {
@@ -97,4 +97,13 @@ form {
   & input {
     margin-bottom: 8px;
   }
+}
+
+th {
+  padding-right: 15px;
+}
+
+table, td, th {
+  border: 1px solid #000;
+  text-align: center;
 }
